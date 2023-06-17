@@ -4,13 +4,13 @@ import { Inter } from 'next/font/google'
 import Page_header from '@/components/header'
 import Page_footer from '@/components/footer'
 import { Josefin_Sans } from 'next/font/google'
-import Page_ejemplo from '@/components/ejemplo'
+/*import Page_ejemplo from '@/components/ejemplo'*/
 
 export default function Home() {
   return (
     <>
       <header>
-        <Page_ejemplo></Page_ejemplo>
+        <Page_header></Page_header>
       </header>
       <nav className="nav-home">
         <h1 className="company-name">Mi aplicacion </h1>

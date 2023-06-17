@@ -12,14 +12,14 @@ const Header = () => {
   return (
     <header className="header">
       
-      <div className="logo">
-        <img src="/img/Ash.jpg" alt="foto"/>
+      <div className="logo" >
+        <img  src="/img/Ash.jpg" alt="foto"/>
       </div>
       <nav>
         <ul className="nav-links">
           <li><a href="#" onClick={handleInicioLinkClick}>Inicio</a></li>
-          <li><Link href="#">Acerca de</Link></li>
-          <li><Link href="#">Contáctenos</Link></li>
+          <li><Link href="/about">Acerca de</Link></li>
+          <li><Link href="/callToAction">Contáctenos</Link></li>
         </ul>
       </nav>
     </header>
