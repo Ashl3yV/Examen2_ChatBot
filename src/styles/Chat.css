@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+
+  button {
+    padding: 5px 10px;
+    background-color: #eb70b6;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .response {
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    text-align: center;
+  }
