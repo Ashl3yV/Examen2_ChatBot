@@ -6,8 +6,7 @@ const QuestionGenerator = () => {
 
   const generateQuestions = async () => {
     try {
-      // Realizar la solicitud a la API de ChatGPT
-      
+
       const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
@@ -18,19 +17,16 @@ const QuestionGenerator = () => {
           model: 'gpt-3.5-turbo',
           messages: [
             { role: 'system', content: 'You are a helpful assistant.' },
-            { role: 'user', content: `Generate questions about ${topic}` }
+            { role: 'user', content: `Genera preguntas y respuestas sobre ${topic}` }
           ]
         })
       });
-  
+
       const data = await response.json();
-      
-      // Verificar si la respuesta es válida
+
       if (data.object === 'chat.completion' && data.choices && data.choices.length > 0) {
-        // Extraer las preguntas generadas de la respuesta
         const generatedQuestions = data.choices.map((choice: any) => choice.message.content);
-        
-        // Actualizar el estado de las preguntas generadas
+
         setQuestions(generatedQuestions);
       } else {
         console.error('Respuesta inválida de la API de ChatGPT', data);
@@ -54,10 +50,11 @@ const QuestionGenerator = () => {
       <h2>Preguntas generadas:</h2>
       <ul className="questions">
         {questions.map((question, index) => (
-          <li key={index}>{question}</li> 
-        ))}
+          <div key={index}> {question}</div>
+        ) )}<br/>
       </ul>
     </div>
+
   );
 };
 

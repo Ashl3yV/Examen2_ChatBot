@@ -10,7 +10,7 @@ export default function Home() {
         <Page_header></Page_header>
       </header>
       <nav className="nav-home">
-        <h1 className="company-name">Mi aplicacion </h1>
+        <h1 className="company-name">Generador de Preguntas </h1>
         <div>
           <Chat/>
         </div>

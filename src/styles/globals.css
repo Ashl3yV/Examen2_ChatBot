@@ -22,7 +22,7 @@ a {
   align-items: center;
   padding: 5px 5%;
   height: 100px;
-  box-shadow: 0px 3px 8px #333;
+  box-shadow: 0px 3px 8px #cfcccc;
 }
 
 .logo{
@@ -64,7 +64,7 @@ a {
 
 .footer {
   background-color: #eb70b6;
-  height: 10%;
+  height: 3%;
   color: #FFFFFF;
   position: fixed;
   bottom: 0;
@@ -106,9 +106,21 @@ a {
 }
 
 .questions{
-  display: flex;
-  justify-content: center;
+  margin-top: 10px;
+  width: 50%;
   font-size: 20px;
   color: #020202;
   font-family: Georgia, 'Times New Roman', Times, serif; 
+   margin-bottom: 10px;
+ 
+}
+
+
+.imagen{
+  margin: 1% auto auto 44%;
+  transition: all 0.3s;
+  width: 10%;
+  height: 10%;
+  border-radius: 2%;
+  transform: scale(1.1);
 }
