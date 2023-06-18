@@ -1,7 +1,7 @@
 import Page_header from '@/components/header'
 import Page_footer from '@/components/footer'
 import React from 'react';
-import Chat from '@/pages/chatBot';
+import Chat from '@/components/chatBot';
 
 export default function Home() {
   return (

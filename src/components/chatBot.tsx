@@ -52,9 +52,9 @@ const QuestionGenerator = () => {
       <button onClick={generateQuestions}>Generar preguntas</button>
 
       <h2>Preguntas generadas:</h2>
-      <ul>
+      <ul className="questions">
         {questions.map((question, index) => (
-          <li key={index}>{question}</li>
+          <li key={index}>{question}</li> 
         ))}
       </ul>
     </div>
